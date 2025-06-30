@@ -1,0 +1,28 @@
+.hero-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    font-family: sans-serif;
+}
+
+/* ✅ Creamy white overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.6); /* light white/cream */
+    z-index: 1;
+}
+
+/* ✅ Content over overlay */
+.content {
+    position: relative;
+    z-index: 10;
+    padding: 20px;
+}
+
