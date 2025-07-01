@@ -4,7 +4,7 @@ import { IoMdCall } from 'react-icons/io';
 
 const Footer = () => {
     return (
-        <div className='bg-[#8b1215] p-10 md:p-0 md:flex items-center justify-evenly'>
+        <div className='bg-[#8b1215] p-10 md:p-0 md:flex items-center justify-evenly mb-4 md:mb-10'>
             {/* first child */}
             <div className='w-72 text-white md:mt-18'>
                 <div className='flex gap-3'><div><img className='w-12 bg-white rounded-sm mb-5' src="https://i.ibb.co/bgqq79Jz/pngegg.png" alt="logo" /></div> <div><h2 className='text-white font-medium text-2xl'>KHAWAJA</h2>

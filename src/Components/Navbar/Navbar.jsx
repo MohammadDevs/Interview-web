@@ -1,5 +1,6 @@
 import React from 'react';
 import NavLinks from './NavLinks';
+import { Link } from 'react-router-dom';
 
 const NavLink = [
   {
@@ -32,10 +33,12 @@ const NavLink = [
 const Navbar = () => {
   const links = NavLink.map(link=> <NavLinks key={link.id} link={link}></NavLinks>)
         
-    return (
+    return ( 
         <div className="navbar bg-[#8b1215] shadow-sm flex justify-between items-center md:py-3 md:px-8 sticky top-0 z-50">
     <div className='flex gap-2'>
-    <div><img className='w-16 bg-white rounded-sm' src="https://i.ibb.co/bgqq79Jz/pngegg.png" alt="logo" /></div>
+      <Link to='/' title='Go to Home'>
+            <img className='w-16 bg-white rounded-sm' src="https://i.ibb.co/bgqq79Jz/pngegg.png" alt="logo" />
+      </Link>
     <div>
         <h2 className='text-white font-medium text-2xl'>KHAWAJA</h2>
         <div><span className='text-amber-300'>MANPOWER</span> <span className='text-white'>SERVICES</span></div>
@@ -43,7 +46,7 @@ const Navbar = () => {
     </div>
   <div>
     <div className="dropdown">
-      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+      <div tabIndex={0} role="button" className="btn bg-transparent hover:bg-white/70 lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
       </div>
       <ul
